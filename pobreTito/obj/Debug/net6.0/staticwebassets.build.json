@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "Hash": "RLqsV+B3Pook2VjAL4yX2i2CrW5EtGpUjIUYvB3m6SY=",
+  "Source": "pobreTito",
+  "BasePath": "_content/pobreTito",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "pobreTito\\wwwroot",
+      "Source": "pobreTito",
+      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\",
+      "BasePath": "_content/pobreTito",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\img\\bg.jpg",
+      "SourceId": "pobreTito",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\",
+      "BasePath": "_content/pobreTito",
+      "RelativePath": "img/bg.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\bg.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\index.html",
+      "SourceId": "pobreTito",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\",
+      "BasePath": "_content/pobreTito",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\Register.html",
+      "SourceId": "pobreTito",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\",
+      "BasePath": "_content/pobreTito",
+      "RelativePath": "Register.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Register.html"
+    },
+    {
+      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\styles.css",
+      "SourceId": "pobreTito",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\",
+      "BasePath": "_content/pobreTito",
+      "RelativePath": "styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\styles.css"
+    }
+  ]
+}

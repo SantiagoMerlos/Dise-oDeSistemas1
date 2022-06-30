@@ -1,0 +1,31 @@
+
+
+.div-index {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+
+  }
+  
+  .formulario {
+    width: 286px;
+    padding: 5px;
+    background-color:rgba(128, 128, 128, 0.411);
+    border-radius:15px
+    
+   
+  }
+
+.background{
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.btn-login{
+    width: 170px
+}
