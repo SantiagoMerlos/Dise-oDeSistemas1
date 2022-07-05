@@ -53,24 +53,29 @@ namespace capacitacion.Controllers
         }
 
 
-
         [HttpPost]
 
         public async Task<RespuestaRegistrarUsuario> Post([FromBody] SolicitudRegistrarUsuario solicitud)
         {
             CargarAsociados();
+            var respuesta = new RespuestaRegistrarUsuario();
 
+            var statusCorreo = 0;
             var max=0;
+
             foreach (var asoc in asociados)
             {
                 if (asoc.Id >= max)
                 {
                     max= asoc.Id;
                 }
+                if(asoc.Correo == solicitud.Correo){
+                    statusCorreo= 1;
+                }
             }
+            
+            if (statusCorreo==0){
             var idPerson = max + 1;
-
-            var respuesta = new RespuestaRegistrarUsuario();
             var clienteNuevo = new Asociado();
             
             clienteNuevo.Id = idPerson;
@@ -82,8 +87,14 @@ namespace capacitacion.Controllers
             
             respuesta.Asociado = clienteNuevo;
             GuardarAsociado(clienteNuevo);
-
             return respuesta;
+
+            }else{
+                respuesta.errorMessage = "El correo ya pertenece a un usuario existente";
+                return respuesta;
+            }
+            return respuesta;
+
         }
 /*
         [HttpPut]
