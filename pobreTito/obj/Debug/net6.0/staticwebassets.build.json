@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RLqsV+B3Pook2VjAL4yX2i2CrW5EtGpUjIUYvB3m6SY=",
+  "Hash": "8T6L5Yte1h9VHAVTeZ7ikh3UZKF47UWlvtF958ESBgI=",
   "Source": "pobreTito",
   "BasePath": "_content/pobreTito",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Register.html"
+    },
+    {
+      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\RegisterIssues.html",
+      "SourceId": "pobreTito",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\",
+      "BasePath": "_content/pobreTito",
+      "RelativePath": "RegisterIssues.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\RegisterIssues.html"
     },
     {
       "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\styles.css",

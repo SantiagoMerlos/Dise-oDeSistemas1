@@ -29,3 +29,18 @@
 .btn-login{
     width: 170px
 }
+
+.form1{
+  /* align-items: left; */
+  margin-top: 10%;
+  padding: 5px;
+  background-color:rgba(128, 128, 128, 0.411);
+  /*width: 30%;*/
+  border-radius:15px
+}
+
+/* @media (max-width: 600px) {
+  .form1 {
+    width:100%;
+  }
+} */

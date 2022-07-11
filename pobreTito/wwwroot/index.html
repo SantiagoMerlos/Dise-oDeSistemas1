@@ -62,6 +62,7 @@
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
 //VER DESPUES, METODO GET
 
@@ -70,9 +71,8 @@
 
       async function Sign(){
           var correo= document.getElementById('Correo').value;
-          alert(correo)
           var password = document.getElementById('password1').value;
-          alert(password)
+ 
 
           var urlApi= "https://localhost:7197/Api/Asociado?Correo="+correo+"&contrasenia="+password;
 
@@ -88,7 +88,26 @@
                     })
                     .then(respuesta =>respuesta.json())
                     console.log(respuesta)
-      }
+                    debugger
+
+                    var Id = respuesta.asociado.id
+                    var nombre = respuesta.asociado.nombre
+                    var apellido = respuesta.asociado.apellido
+                    var telefono = respuesta.asociado.telefono
+
+                    if( respuesta.asociado != null){
+                      window.location.href = "../RegisterIssues.html?Id="+Id+ "&nombre="+nombre+ "&apellido="+apellido+ "&telefono="+telefono;
+                    }else{
+                      Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: respuesta.errorMessage,
+                        width: "30%",
+                        height: "50%"
+                    })
+                  }
+
+        }
       
     </script>
 </body>
