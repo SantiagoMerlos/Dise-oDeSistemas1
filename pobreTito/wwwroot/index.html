@@ -43,7 +43,7 @@
               
                   <div class="">
                     <!-- Simple link -->
-                    <a href="#" style="color:black">Forgot password?</a>
+                    <p style="color:red;" id="errorLogin"></p>
                   </div>
                 </div>
               
@@ -72,7 +72,8 @@
       async function Sign(){
           var correo= document.getElementById('Correo').value;
           var password = document.getElementById('password1').value;
- 
+
+          if (correo=="" || password=="") {document.getElementById("errorLogin").innerHTML = "Ingrese los campos faltantes por favor"}
 
           var urlApi= "https://localhost:7197/Api/Asociado?Correo="+correo+"&contrasenia="+password;
 
@@ -90,14 +91,16 @@
                     console.log(respuesta)
                     debugger
 
-                    var Id = respuesta.asociado.id
-                    var nombre = respuesta.asociado.nombre
-                    var apellido = respuesta.asociado.apellido
-                    var telefono = respuesta.asociado.telefono
-
                     if( respuesta.asociado != null){
+                      var Id = respuesta.asociado.id
+                      var nombre = respuesta.asociado.nombre
+                      var apellido = respuesta.asociado.apellido
+                      var telefono = respuesta.asociado.telefono
+
                       window.location.href = "../RegisterIssues.html?Id="+Id+ "&nombre="+nombre+ "&apellido="+apellido+ "&telefono="+telefono;
-                    }else{
+                    }
+                    if (respuesta.errorMessage != null) {
+                      document.getElementById("errorLogin").innerHTML = respuesta.errorMessage
                       Swal.fire({
                         icon: 'error',
                         title: 'Oops...',
@@ -105,7 +108,9 @@
                         width: "30%",
                         height: "50%"
                     })
-                  }
+                    }
+
+                  
 
         }
       

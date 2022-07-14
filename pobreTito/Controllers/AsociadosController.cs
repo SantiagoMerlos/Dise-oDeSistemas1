@@ -12,7 +12,7 @@ namespace capacitacion.Controllers
     [ApiController]
     [Route("/api/[Controller]")]
 
-    
+    //ASOCIADO
     public class AsociadoController : Controller
     {
         public List<Asociado> asociados { get; set; }
@@ -36,6 +36,30 @@ namespace capacitacion.Controllers
         if(asociados == null) asociados = new List<Asociado>();
     
     }
+//INCIDENTE
+        public List<Incidente> incidentes { get; set; }
+        public const string DIRECCION_INCIDENTE = "db/incidentes.json"; 
+
+        private void GuardarIncidente(Incidente? incidente)
+    {
+        if(incidente != null) incidentes.Add(incidente);
+        string temp = JsonConvert.SerializeObject(incidentes);        
+        System.IO.File.WriteAllText(DIRECCION_INCIDENTE, temp);
+    } 
+     private void CargarIncidentes()
+    {
+        string json = System.IO.File.ReadAllText(DIRECCION_INCIDENTE);
+        incidentes = JsonConvert.DeserializeObject<List<Incidente>>(json);
+    
+        if(incidentes == null) incidentes = new List<Incidente>();
+    
+    }
+
+
+
+
+
+//ASOCIADO
 
         [HttpGet]
         public async Task<RespuestaInicioSesion> Get([FromQuery] SolicitudInicioSesion solicitud)
@@ -53,7 +77,7 @@ namespace capacitacion.Controllers
         }
 
 
-        [HttpPost]
+     [HttpPost]
 
         public async Task<RespuestaRegistrarUsuario> Post([FromBody] SolicitudRegistrarUsuario solicitud)
         {
@@ -95,7 +119,33 @@ namespace capacitacion.Controllers
             }
             return respuesta;
 
-        }
+        }  
+//INCIDENTE+
+
+    [HttpPost]
+    [Route("RegisterIncident")]
+    public async Task<RespuestaRegistrarIncidente> Post([FromBody] SolicitudRegistrarIncidente solicitud)
+    { 
+        CargarIncidentes();
+
+        var respuesta = new RespuestaRegistrarIncidente();
+
+        var RegistroIncidentes = new Incidente();
+
+        RegistroIncidentes.Id = solicitud.Id;
+        RegistroIncidentes.Nombre = solicitud.Nombre;
+        RegistroIncidentes.Apellido = solicitud.Apellido;
+        RegistroIncidentes.Telefono = solicitud.Telefono;
+        RegistroIncidentes.fechaSuccess = solicitud.fechaSuccess;
+        RegistroIncidentes.barrio = solicitud.barrio;
+        RegistroIncidentes.direccionIncident = solicitud.direccionIncident;
+        RegistroIncidentes.detalleIncident = solicitud.detalleIncident;
+
+        GuardarIncidente(RegistroIncidentes);
+
+        respuesta.incidente = RegistroIncidentes;
+        return respuesta;
+    }
 /*
         [HttpPut]
         public async Task<RespuestaActualizarAsociado> Put([FromBody] SolicitudActualizarAsociado solicitud)

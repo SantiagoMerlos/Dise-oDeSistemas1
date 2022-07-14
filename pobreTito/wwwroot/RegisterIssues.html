@@ -34,12 +34,7 @@
           <!-- Password input -->
           <div class="form-outline  col-xs-12">
             <label class="form-label" for="form2Example2">Fecha del suceso:</label>
-            <input type="text" id="fetchSucces" class="form-control" autocomplete="off" placeholder="fecha" />
-          </div>
-
-          <div class="form-outline col-xs-12">
-            <label class="form-label" for="form2Example2">Detalle el tipo de incidente:</label>
-            <input type="text" id="typeIncident" class="form-control" autocomplete="off" placeholder="detalle el incidente" />
+            <input type="date" id="fetchSucces" class="form-control" autocomplete="off" placeholder="fecha" />
           </div>
 
           <div class="form-outline col-xs-12">
@@ -52,10 +47,15 @@
             <input type="text" id="addressIncident" class="form-control" autocomplete="off" placeholder="Ingrese la dirección" />
           </div>
 
+          <div class="form-outline col-xs-12">
+            <label class="form-label" for="form2Example2">Detalle el tipo de incidente:</label>
+            <textarea id="typeIncident" cols="30" rows="6"  class="form-control" autocomplete="off" placeholder="detalle el incidente"></textarea>
+          </div>
           <br>
           <!-- Register button -->
           <div class="text-center">
-            <button type="button" class="btn btn-success btn-block text-center btn-login" onclick="Register()">Registrar incidente</button>
+            <p id="ErrorMessage" style="color:red"></p>
+            <button type="button" class="btn btn-success btn-block text-center btn-login" onclick="RegisterIncident()">Registrar incidente</button>
           </div>
         </form>
     </div>
@@ -71,8 +71,76 @@
         var Telefono = params.get('telefono');
 
         document.getElementById("nombre").value= Nombre;
+        document.getElementById("nombre").disabled= true;
         document.getElementById("apellido").value= Apellido;
+        document.getElementById("apellido").disabled= true;
         document.getElementById("telefono").value= Telefono;
+
+      async function RegisterIncident() {
+        
+        let params = new URLSearchParams(location.search);
+        var Id = params.get('Id');
+
+        var nombre = document.getElementById("nombre").value
+        var apellido = document.getElementById("apellido").value
+        var telefono = document.getElementById("telefono").value
+        var fechaSuccess = document.getElementById("fetchSucces").value
+        var barrio = document.getElementById("BarrioIncident").value
+        var direccionIncident = document.getElementById("addressIncident").value
+        var detalleIncident = document.getElementById("typeIncident").value
+
+        var status=0
+        debugger;
+        if (telefono == "" || fechaSuccess == "" || barrio == "" || direccionIncident== ""||detalleIncident== "") {
+          status=1
+          debugger;
+          }      
+
+        //console.log(nombre,apellido,telefono,fechaSuccess,barrio,direccionIncident,detalleIncident)
+
+        if( status==0){
+
+          let datos = {
+          "Id": Id,
+          "nombre": nombre,
+          "apellido":apellido,
+          "telefono": telefono,
+          "fechaSuccess": fechaSuccess,
+          "barrio": barrio,
+          "direccionIncident": direccionIncident,
+          "detalleIncident": detalleIncident
+          
+        }
+        var urlApi="https://localhost:7197/Api/Asociado/RegisterIncident";
+
+        const respuesta = await fetch(urlApi,
+                      {
+                          method : "POST",
+                          headers: 
+                          {
+                          'accept' : 'application/json',
+                          'Content-Type' : 'application/json',    
+                          },
+                          body : JSON.stringify(datos) 
+                      })
+                      .then(respuesta =>respuesta.json())
+                      .catch(err =>console.log(err));
+                      
+                      if (respuesta.incidente != null) {
+                        Swal.fire(
+                        'Incidente registrado con exito!',
+                        'You clicked the button!',
+                        'success',
+                        setTimeout(function(){
+                          window.location.href = "../RegisterIssues.html?Id="+Id+ "&nombre="+nombre+ "&apellido="+apellido+ "&telefono="+telefono
+                          }, 2500))
+                      }
+
+        }else{
+          document.getElementById("ErrorMessage").innerHTML= "Ingrese los campos faltantes."
+        }
+
+      }
 </script>
 </body>
 </html>
