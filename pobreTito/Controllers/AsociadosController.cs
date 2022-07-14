@@ -156,8 +156,14 @@ namespace capacitacion.Controllers
             var respuesta = new RespuestaObteneRegistros();
 
                 user = incidentes.FindAll(x=> x.Id == solicitud.Id);
+                
+            var status = 0;
+                foreach (var i in user)
+                {
+                    status = 1;
+                }
 
-                if(user != null){
+                if(status == 1){
                     respuesta.incidente = user;
                 }else{
                     respuesta.CondicionRegistros = "No tiene registros previos.";

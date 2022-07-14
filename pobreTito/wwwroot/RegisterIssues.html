@@ -78,6 +78,7 @@
             <tbody id="registros">
             </tbody>
           </table>
+          <p id="datosRegistros" class="text-center" style="color:red"></p>
       </div>
     </div>          
         
@@ -113,8 +114,9 @@
                         },
                     })
                     .then(respuesta =>respuesta.json())
-                    console.log(respuesta.incidente)
-                    
+                    var error= respuesta.condicionRegistros
+
+                  if (respuesta.incidente != null) {
                     var index = document.getElementById('registros').children.length;
                     for (let i = 0; i <= respuesta.incidente.length; i++) {
 
@@ -138,6 +140,11 @@
                       
                         index++;
                     }
+                  }else{
+                    document.getElementById("datosRegistros").innerHTML= error
+                  }
+                    
+                    
                   
         }
         ObtenerRegistros()
