@@ -146,6 +146,24 @@ namespace capacitacion.Controllers
         respuesta.incidente = RegistroIncidentes;
         return respuesta;
     }
+
+    [HttpGet]
+    [Route("ObtenerRegistros")]
+    public async Task<RespuestaObteneRegistros> GetObtenerRegistros([FromQuery] SolicitudObtenerRegistros solicitud)
+        {
+            CargarIncidentes();
+            var user = new List<Incidente> ();
+            var respuesta = new RespuestaObteneRegistros();
+
+                user = incidentes.FindAll(x=> x.Id == solicitud.Id);
+
+                if(user != null){
+                    respuesta.incidente = user;
+                }else{
+                    respuesta.CondicionRegistros = "No tiene registros previos.";
+                }
+            return respuesta;
+        }
 /*
         [HttpPut]
         public async Task<RespuestaActualizarAsociado> Put([FromBody] SolicitudActualizarAsociado solicitud)

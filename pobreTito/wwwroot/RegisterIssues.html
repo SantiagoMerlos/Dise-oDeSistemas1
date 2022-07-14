@@ -10,55 +10,78 @@
 </head>
 <body class="background">
 <div class="container">
-          
-    <div class=" div-Issues">
+    <div class="row">
+      <div class="div-Issues col-md-4">
 
-      <form class="form1 col-md-4">
-        <div class="text-center" >
-          <h5>Complete el siguiente formulario para registrar un reclamo</h5>
-        </div>
-        <div class="form-outline col-xs-12">
-            <label class="form-label"  for="form2Example1">Nombre:</label>
-            <input type="text" id="nombre" class="form-control" placeholder="Nombre" /> 
-        </div>
+        <form class="form1 ">
+          <div class="text-center" >
+            <h5>Complete el siguiente formulario para registrar un reclamo</h5>
+          </div>
+          <div class="form-outline col-xs-12">
+              <label class="form-label"  for="form2Example1">Nombre:</label>
+              <input type="text" id="nombre" class="form-control" placeholder="Nombre" /> 
+          </div>
 
-        <div class="form-outline  col-xs-12">
-            <label class="form-label"  for="form2Example1">Apellido:</label>
-            <input type="text" id="apellido" class="form-control" placeholder="Apellido"/> 
-        </div>
-
-        <div class="form-outline  col-xs-12">
-            <label class="form-label"  for="form2Example1">Teléfono:</label>
-            <input type="text" id="telefono" class="form-control" placeholder="Telefono" /> 
-        </div>
-          <!-- Password input -->
           <div class="form-outline  col-xs-12">
-            <label class="form-label" for="form2Example2">Fecha del suceso:</label>
-            <input type="date" id="fetchSucces" class="form-control" autocomplete="off" placeholder="fecha" />
+              <label class="form-label"  for="form2Example1">Apellido:</label>
+              <input type="text" id="apellido" class="form-control" placeholder="Apellido"/> 
           </div>
 
-          <div class="form-outline col-xs-12">
-            <label class="form-label" for="form2Example2">Ingrese el barrio del incidente:</label>
-            <input type="text" id="BarrioIncident" class="form-control" autocomplete="off" placeholder="ingrese el barrio" />
+          <div class="form-outline  col-xs-12">
+              <label class="form-label"  for="form2Example1">Teléfono:</label>
+              <input type="text" id="telefono" class="form-control" placeholder="Telefono" /> 
           </div>
+            <!-- Password input -->
+            <div class="form-outline  col-xs-12">
+              <label class="form-label" for="form2Example2">Fecha del suceso:</label>
+              <input type="date" id="fetchSucces" class="form-control" autocomplete="off" placeholder="fecha" />
+            </div>
 
-          <div class="form-outline col-xs-12">
-            <label class="form-label" for="form2Example2">Ingrese la dirección del incidente:</label>
-            <input type="text" id="addressIncident" class="form-control" autocomplete="off" placeholder="Ingrese la dirección" />
-          </div>
+            <div class="form-outline col-xs-12">
+              <label class="form-label" for="form2Example2">Ingrese el barrio del incidente:</label>
+              <input type="text" id="BarrioIncident" class="form-control" autocomplete="off" placeholder="ingrese el barrio" />
+            </div>
 
-          <div class="form-outline col-xs-12">
-            <label class="form-label" for="form2Example2">Detalle el tipo de incidente:</label>
-            <textarea id="typeIncident" cols="30" rows="6"  class="form-control" autocomplete="off" placeholder="detalle el incidente"></textarea>
-          </div>
-          <br>
-          <!-- Register button -->
-          <div class="text-center">
-            <p id="ErrorMessage" style="color:red"></p>
-            <button type="button" class="btn btn-success btn-block text-center btn-login" onclick="RegisterIncident()">Registrar incidente</button>
-          </div>
-        </form>
-    </div>
+            <div class="form-outline col-xs-12">
+              <label class="form-label" for="form2Example2">Ingrese la dirección del incidente:</label>
+              <input type="text" id="addressIncident" class="form-control" autocomplete="off" placeholder="Ingrese la dirección" />
+            </div>
+
+            <div class="form-outline col-xs-12">
+              <label class="form-label" for="form2Example2">Detalle el tipo de incidente:</label>
+              <textarea id="typeIncident" cols="30" rows="6"  class="form-control" autocomplete="off" placeholder="detalle el incidente"></textarea>
+            </div>
+            <br>
+            <!-- Register button -->
+            <div class="text-center">
+              <p id="ErrorMessage" style="color:red"></p>
+              <button type="button" class="btn btn-success btn-block text-center btn-login" onclick="RegisterIncident()">Registrar incidente</button>
+            </div>
+          </form>
+      </div>
+      <div class="col-md-2">
+
+      </div>
+      
+      <div class="col-md-5  registrosPrevios">
+          <h5 class="text-center">Datos registros anteriores</h5>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Fecha</th>
+                <th scope="col">Barrio</th>
+                <th scope="col">direccion</th>
+                <th scope="col">Detalle</th>
+                
+              </tr>
+            </thead>
+            <tbody id="registros">
+            </tbody>
+          </table>
+      </div>
+    </div>          
+        
+ 
 
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -75,6 +98,49 @@
         document.getElementById("apellido").value= Apellido;
         document.getElementById("apellido").disabled= true;
         document.getElementById("telefono").value= Telefono;
+
+        async function ObtenerRegistros(){
+          var urlApi1="https://localhost:7197/Api/Asociado/ObtenerRegistros?Id="+Id;
+        debugger;
+        const respuesta = await fetch(urlApi1,
+                    {
+                        mode : 'no-cors',
+                        method : 'GET',
+                        headers: 
+                        {
+                        'accept' : 'application/json',
+                        'Content-Type' : 'application/json',    
+                        },
+                    })
+                    .then(respuesta =>respuesta.json())
+                    console.log(respuesta.incidente)
+                    
+                    var index = document.getElementById('registros').children.length;
+                    for (let i = 0; i <= respuesta.incidente.length; i++) {
+
+                          var containerRegistros = document.getElementById("registros");
+
+                          var tdFecha = document.createElement("td"); tdFecha.innerHTML = respuesta.incidente[i].fechaSuccess;
+                          var tdBarrio = document.createElement("td"); tdBarrio.innerHTML = respuesta.incidente[i].barrio;
+                          var tdDireccion = document.createElement("td"); tdDireccion.innerHTML = respuesta.incidente[i].direccionIncident;
+                          var tdDetalle = document.createElement("td"); tdDetalle.innerHTML = respuesta.incidente[i].detalleIncident;
+                          
+
+                          var tr = document.createElement("tr");
+                          tr.id = "tr"+index;
+                          containerRegistros.appendChild(tr);
+                          
+                          document.getElementById("tr"+index).appendChild(tdFecha);
+                          document.getElementById("tr"+index).appendChild(tdBarrio );
+                          document.getElementById("tr"+index).appendChild(tdDireccion);
+                          document.getElementById("tr"+index).appendChild(tdDetalle);
+                          
+                      
+                        index++;
+                    }
+                  
+        }
+        ObtenerRegistros()
 
       async function RegisterIncident() {
         
@@ -133,7 +199,7 @@
                         'success',
                         setTimeout(function(){
                           window.location.href = "../RegisterIssues.html?Id="+Id+ "&nombre="+nombre+ "&apellido="+apellido+ "&telefono="+telefono
-                          }, 2500))
+                          }, 2000))
                       }
 
         }else{
