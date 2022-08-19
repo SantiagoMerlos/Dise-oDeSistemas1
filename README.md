@@ -1,6 +1,6 @@
 #Dise-oDeSistemas1
 
-Cuentas registradas:
+Cuentas registradas PobreTito:
 
   "Correo":"new2@gmail.com",
   "contraseña":"123456"
