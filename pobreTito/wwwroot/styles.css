@@ -52,3 +52,15 @@
   border-radius:15px;
   height: 50%;
 }
+
+.nav-link{
+  color:rgba(0, 0, 0, 0.941)
+}
+.nav-link:hover{
+  color: rgb(19, 117, 17)
+}
+.navbar-user{
+  background-color: rgba(0, 0, 0, 0.218);
+  display:flex;
+  justify-content: flex-end;
+}

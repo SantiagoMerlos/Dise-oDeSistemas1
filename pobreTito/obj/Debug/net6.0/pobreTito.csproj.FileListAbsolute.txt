@@ -31,3 +31,36 @@ C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Diseño de sistemas\pobre
 C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Diseño de sistemas\pobreTito\bin\Debug\net6.0\db\clientes.json
 C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Diseño de sistemas\pobreTito\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Diseño de sistemas\pobreTito\bin\Debug\net6.0\db\incidentes.json
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\appsettings.json
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\db\clientes.json
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\db\incidentes.json
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\package-lock.json
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\package.json
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\pobreTito.staticwebassets.runtime.json
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\pobreTito.exe
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\pobreTito.deps.json
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\pobreTito.runtimeconfig.json
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\pobreTito.dll
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\pobreTito.pdb
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\pobreTito.csproj.AssemblyReference.cache
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\pobreTito.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\pobreTito.AssemblyInfoInputs.cache
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\pobreTito.AssemblyInfo.cs
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\pobreTito.csproj.CoreCompileInputs.cache
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\pobreTito.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\pobreTito.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\scopedcss\bundle\pobreTito.styles.css
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\pobreTito.csproj.CopyComplete
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\pobreTito.dll
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\refint\pobreTito.dll
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\pobreTito.pdb
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\pobreTito.genruntimeconfig.cache
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\ref\pobreTito.dll

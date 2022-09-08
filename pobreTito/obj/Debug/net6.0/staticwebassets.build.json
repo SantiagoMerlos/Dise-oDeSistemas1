@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8T6L5Yte1h9VHAVTeZ7ikh3UZKF47UWlvtF958ESBgI=",
+  "Hash": "n1RSbPKRulU/GX0ZtSbgx3ITMX0aJIQEDf5Nec/uM7s=",
   "Source": "pobreTito",
   "BasePath": "_content/pobreTito",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "pobreTito\\wwwroot",
       "Source": "pobreTito",
-      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\wwwroot\\",
       "BasePath": "_content/pobreTito",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\img\\bg.jpg",
+      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\wwwroot\\img\\bg.jpg",
       "SourceId": "pobreTito",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\wwwroot\\",
       "BasePath": "_content/pobreTito",
       "RelativePath": "img/bg.jpg",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\img\\bg.jpg"
     },
     {
-      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\wwwroot\\index.html",
       "SourceId": "pobreTito",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\wwwroot\\",
       "BasePath": "_content/pobreTito",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\Register.html",
+      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\wwwroot\\Register.html",
       "SourceId": "pobreTito",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\wwwroot\\",
       "BasePath": "_content/pobreTito",
       "RelativePath": "Register.html",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\Register.html"
     },
     {
-      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\RegisterIssues.html",
+      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\wwwroot\\RegisterIssues.html",
       "SourceId": "pobreTito",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\wwwroot\\",
       "BasePath": "_content/pobreTito",
       "RelativePath": "RegisterIssues.html",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\RegisterIssues.html"
     },
     {
-      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\styles.css",
+      "Identity": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\wwwroot\\styles.css",
       "SourceId": "pobreTito",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\wwwroot\\",
       "BasePath": "_content/pobreTito",
       "RelativePath": "styles.css",
       "AssetKind": "All",

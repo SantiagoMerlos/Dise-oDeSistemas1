@@ -245,17 +245,21 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SANTI\\.nuget\\packages\\": {}
+    "C:\\Users\\SANTI\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\pobreTito.csproj",
+      "projectUniqueName": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\pobreTito.csproj",
       "projectName": "pobreTito",
-      "projectPath": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\pobreTito.csproj",
+      "projectPath": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\pobreTito.csproj",
       "packagesPath": "C:\\Users\\SANTI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\obj\\",
+      "outputPath": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\SANTI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -310,7 +314,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

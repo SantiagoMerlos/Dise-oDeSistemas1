@@ -9,6 +9,15 @@
     <title>PobreTito</title>
 </head>
 <body class="background">
+
+  <ul class="nav nav-pills navbar-user">
+    <li class="nav-item dropdown dropp">
+      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false" id="userName"></a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="https://localhost:7197/">Cerrar sesión</a></li>
+      </ul>
+    </li>
+  </ul>
 <div class="container">
     <div class="row">
       <div class="div-Issues col-md-4">
@@ -99,6 +108,8 @@
         document.getElementById("apellido").value= Apellido;
         document.getElementById("apellido").disabled= true;
         document.getElementById("telefono").value= Telefono;
+        document.getElementById("userName").innerHTML= Nombre+" "+Apellido; 
+        //document.innerHTML =Nombre+" "+Apellido; 
 
         async function ObtenerRegistros(){
           var urlApi1="https://localhost:7197/Api/Asociado/ObtenerRegistros?Id="+Id;

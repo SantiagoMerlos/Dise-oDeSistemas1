@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LAusDFEz4YcrLLqPbedVB4X9Fhj5dbC0WIicUjp9QqPe7or6hkRTNj4oBwnv6zZHfbnKZ+VFsSbj0LkKlXC10g==",
+  "dgSpecHash": "nupHxF/Dm1CFKVTBTEXqd+EgK4lf1MqF/b1bSDJ6V8VnQnzNPFUynWXVYJt2H9Bvc9NVQiBmDsklhhDybul90w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Diseño de sistemas\\pobreTito\\pobreTito.csproj",
+  "projectFilePath": "C:\\Users\\SANTI\\OneDrive\\Documentos\\diseño de sistemas\\Dise-oDeSistemas1\\pobreTito\\pobreTito.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SANTI\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\SANTI\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

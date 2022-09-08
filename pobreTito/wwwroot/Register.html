@@ -90,7 +90,7 @@
 
           if (correo == "" || apellido == "" || password == ""|| nombre == "" || telefono=="") {
               status=1
-
+              debugger;
             }      
 
           if (status==0){
@@ -129,13 +129,20 @@
                     
             console.log(respuesta)
           }else{
-            alert("ingrese los datos faltantes.")
-          }
 
+            alert('Ingrese los datos faltantes')
+            /*
+              Swal.fire({
+                        icon: 'error',
+                        title: 'Oops...',
+                        text: respuesta.errorMessage,
+                        width: "30%",
+                        height: "50%"
+                      })
+            */
 
-          
-
-        } 
+        } //REVISAR LLAVES
+      }
   </script>
 </body>
 </html>
