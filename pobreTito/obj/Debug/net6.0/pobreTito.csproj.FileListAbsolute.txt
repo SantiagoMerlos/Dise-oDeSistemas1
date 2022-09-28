@@ -64,3 +64,5 @@ C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTi
 C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\pobreTito.pdb
 C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\pobreTito.genruntimeconfig.cache
 C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\obj\Debug\net6.0\ref\pobreTito.dll
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\contrato\obj\contrato.csproj.nuget.dgspec.json
+C:\Users\SANTI\OneDrive\Documentos\diseño de sistemas\Dise-oDeSistemas1\pobreTito\bin\Debug\net6.0\contrato\obj\project.assets.json
