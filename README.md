@@ -12,3 +12,5 @@ Cuentas registradas PobreTito:
 
   "Correo":"new4@gmail.com"
   "contraseña":"123456"
+  
+Link repositorio proyecto banco de sangre: https://github.com/SantiagoMerlos/ProyectoBancoDeSangre
